@@ -11,7 +11,7 @@ const errorHandler = (err, req, res) => {
 
     res.status(status)
 
-    res.json({ message: err.message })
+    res.json({ message: err.message, isError: true })
 }
 
 module.exports = errorHandler
